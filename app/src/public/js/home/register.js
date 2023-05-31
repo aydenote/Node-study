@@ -7,14 +7,14 @@ const id = document.querySelector('#id'),
   registerBtn = document.querySelector('#button');
 
 const clickregister = () => {
+  if (!id.value) return alert('아이디를 입력해주세요.');
+  if (password !== confirmPw) return alert('비밀번호가 일치하지 않습니다.');
+
   const req = {
     id: id.value,
     name: name.value,
     password: password.value,
-    confirmPw: confirmPw.value,
   };
-
-  console.log(req);
 
   fetch('/register', {
     method: 'POST',
