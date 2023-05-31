@@ -28,13 +28,14 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.form button {
+.form #button {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: #4caf50;
-  width: 100%;
+  width: 80%;
   border: 0;
+  margin: 0 auto;
   padding: 15px;
   color: #ffffff;
   font-size: 14px;
@@ -43,9 +44,9 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form button:hover,
-.form button:active,
-.form button:focus {
+.form #button:hover,
+.form #button:active,
+.form #button:focus {
   background: #43a047;
 }
 .form .message {
@@ -97,6 +98,7 @@
 body {
   background: #76b852; /* fallback for old browsers */
   background: rgb(141, 194, 111);
+  background: -o-linear-gradient(left, rgba(141, 194, 111, 1) 0%, rgba(118, 184, 82, 1) 50%);
   background: -webkit-gradient(
     linear,
     left top,
@@ -104,7 +106,6 @@ body {
     from(rgba(141, 194, 111, 1)),
     color-stop(50%, rgba(118, 184, 82, 1))
   );
-  background: -o-linear-gradient(left, rgba(141, 194, 111, 1) 0%, rgba(118, 184, 82, 1) 50%);
   background: linear-gradient(90deg, rgba(141, 194, 111, 1) 0%, rgba(118, 184, 82, 1) 50%);
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;

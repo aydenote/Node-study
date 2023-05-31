@@ -4,6 +4,7 @@ class UserStorage {
   static #users = {
     id: ['test1', 'test2', 'test3'],
     password: ['1234', '12345', '123456'],
+    name: ['최부장', 'ayden', '나천재'],
   };
 
   static getUsers(...fields) {
