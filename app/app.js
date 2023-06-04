@@ -23,15 +23,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
-dotenv.config();
 
 // 라우팅
 const home = require('./src/routes/home');
-
-const logger = require('./src/config/logger');
-logger.error('안녕하세요');
 
 // 앱 세팅
 app.set('views', './src/views');

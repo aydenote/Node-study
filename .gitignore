@@ -1,5 +1,10 @@
-#node_modules
+# Node_modules
 **node_modules/
 
-#config
+# Config
 .env
+
+# Logs
+logs
+*.log
+access.log
