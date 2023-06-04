@@ -21,7 +21,7 @@ const printLogFormat = {
 const opts = {
   file: new transports.File({
     filename: 'access.log',
-    dirname: './logs',
+    dirname: './log',
     level: 'info',
     format: printLogFormat.file,
   }),
